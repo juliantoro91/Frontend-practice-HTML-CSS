@@ -1,31 +1,3 @@
-:root {
-    --very-light-pink: #C7C7C7;
-    --white: #FFFFFF;
-    --text-input-field: #F7F7F7;
-    --black: #000000;
-    --hospital-green: #ACD9B2;
-    --dark: #232830;
-    --principal-font: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
-    --secondary-font: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --sm: 1.4rem;
-    --md: 1.6rem;
-    --lg: 1.8rem;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: var(--principal-font);
-}
-
 .login {
     width: 100%;
     height: 100vh;
@@ -33,17 +5,31 @@ body {
     place-items: center;
 }
 
-.form-container {
+/* App general styles */
+.container-one {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    text-align: center;
+}
+
+.container-two {
+    height: 75%;
+}
+
+.form-container {
+    justify-items:auto;
+}
+
+.email-container {
+    justify-items: center;
 }
 
 .logo {
     width: 150px;
     margin-bottom: 48px;
     justify-self: center;
-    display: none;
+    display: block;
 }
 
 .title {
@@ -52,11 +38,16 @@ body {
     text-align: center;
 }
 
+.account-title {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
 .sub-title {
     color: var(--very-light-pink);
     font-size: var(--md);
     font-weight: 300;
-    margin-top: 0;
+    margin-top: 4px;
     margin-bottom: 32px;
     text-align: center;
 }
@@ -70,6 +61,7 @@ body {
     font-size: var(--sm);
     font-weight: bold;
     margin-bottom: 4px;
+    text-align: left;
 }
 
 .input {
@@ -79,7 +71,43 @@ body {
     height: 30px;
     font-size: var(--md);
     padding: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+.form-text {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    text-align: left;
+    margin: 8px 0 32px 0;
+
+}
+
+.email-image {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email-image img {
+    width: 80px;
+}
+
+.submit-bottom-text {
+    font-size: var(--sm);
+}
+
+.submit-bottom-text span {
+    color: var(--very-light-pink);
+}
+
+.submit-bottom-text a {
+    color: var(--hospital-green);
+    text-decoration: none;
 }
 
 .primary-button {
@@ -94,13 +122,113 @@ body {
     height: 50px;
 }
 
--login-button {
+.type-one-button {
     margin-top: 14px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
-@media (max-width: 640px) {
-    .logo {
-        display: block;
-    }
+.type-two-button {
+    background-color: var(--white);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    align-self: end;
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.type-three-button {
+    margin-top: auto;
+    align-self:flex-end;
+}
+
+/* Home App Style */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 26px;
+    place-content: center;
+}
+
+.product-card {
+    width: 140px;
+}
+
+.product-card-image img{
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product-card-info {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card-info div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-bottom: 4px;
+}
+
+.product-card-info div p:nth-child(2){
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+.product-card-icon {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* Menu App Style */
+
+.mobile-menu {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+
+.bottom-menu {
+    align-self:baseline;
+    margin-top: auto;
+}
+
+.bottom-menu a {
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+.bottom-menu li {
+    margin-bottom: 0px !important;
+    margin-top: 8px;
+}
+
+.signout a {
+    color: var(--hospital-green);
 }

@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 640px)"> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <title>Password change</title>
+    <title>Log In</title>
 </head>
 <body>
     <main class="login">
-        <section class="container-one form-container">
+        <section class="container-one container-two form-container">
             <img src="../images/logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-            <h1 class="title">Create a new password</h1>
-            <p class="sub-title">Create a new password for your account</p>
-
             <form action="" class="form">
+                <label for="email" class="label">Email address</label>
+                <input type="text" id="email" placeholder="platzi@example.com" class="input input-email">
                 <label for="password" class="label">Password</label>
                 <input type="password" id="password" placeholder="**********" class="input input-password">
-                <label for="password" class="label">Re-enter password</label>
-                <input type="password" id="new-password" placeholder="**********" class="input input-password">
 
-                <input type="submit" value="Confirm" class="primary-button type-one-button">
+                <input type="submit" value="Log in" class="primary-button type-one-button">
+
+                <p class="submit-bottom-text">
+                    <a href="">Forgot my password</a>
+                </p>
             </form>
+
+            <button class="primary-button type-two-button">Sign up</button>
+
         </section>
     </main>
 </body>

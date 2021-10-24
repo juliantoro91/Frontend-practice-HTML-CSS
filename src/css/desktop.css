@@ -1,0 +1,28 @@
+.logo {
+    display: none;
+}
+
+.type-two-button {
+    align-self: auto;
+    margin-top: 50px;
+}
+
+.type-three-button {
+    align-self: auto;
+    margin-top: 50px;
+}
+
+/* Home App Style */
+
+.cards-container {
+    grid-template-columns: repeat(auto-fill, 240px);
+}
+
+.product-card {
+    width: 240px;
+}
+
+.product-card-image img{
+    width: 240px;
+    height: 240px;
+}

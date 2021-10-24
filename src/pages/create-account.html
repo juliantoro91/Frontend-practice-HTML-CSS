@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 640px)"> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <title>Password change</title>
+    <title>Create account</title>
 </head>
 <body>
     <main class="login">
-        <section class="container-one form-container">
-            <img src="../images/logos/logo_yard_sale.svg" alt="logo" class="logo">
+        <section class="container-one container-two form-container">
 
-            <h1 class="title">Create a new password</h1>
-            <p class="sub-title">Create a new password for your account</p>
+            <h1 class="title account-title">My account</h1>
 
             <form action="" class="form">
+                <label for="name" class="label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="input input-name">
+                <label for="email" class="label">Email address</label>
+                <input type="text" id="email" placeholder="platzi@example.com" class="input input-email">
                 <label for="password" class="label">Password</label>
                 <input type="password" id="password" placeholder="**********" class="input input-password">
-                <label for="password" class="label">Re-enter password</label>
-                <input type="password" id="new-password" placeholder="**********" class="input input-password">
 
-                <input type="submit" value="Confirm" class="primary-button type-one-button">
+                <input type="submit" value="Create account" class="primary-button type-three-button">
             </form>
         </section>
     </main>
