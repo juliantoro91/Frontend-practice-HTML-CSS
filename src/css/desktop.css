@@ -26,3 +26,27 @@
     width: 240px;
     height: 240px;
 }
+
+/* Navbar App Style */
+
+.menu-icon {
+    display: none;
+}
+
+.navbar-left ul, .navbar-right ul {
+    list-style: none;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    font-size: var(--md);
+}
+
+.navbar-email {
+    display: contents;
+}
+
+.product-details {
+    flex-direction: row;
+    width: 90%;
+    max-width: 720px;
+}

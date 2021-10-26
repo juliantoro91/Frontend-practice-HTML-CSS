@@ -5,6 +5,11 @@
     place-items: center;
 }
 
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+
 /* App general styles */
 .container-one {
     display: grid;
@@ -120,6 +125,9 @@
     font-size: var(--md);
     font-weight: bold;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .type-one-button {
@@ -231,4 +239,233 @@
 
 .signout a {
     color: var(--hospital-green);
+}
+
+/* My order */
+
+.my-order {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    margin: auto;
+}
+
+.my-order h1 {
+    font-size: var(--lg);
+}
+
+.my-order-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-top: 24px;
+}
+
+.my-order-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 4px;
+    border-radius: 8px;
+    padding: 0 24px;
+    height: 60px;
+}
+
+.order-list {
+    background-color: var(--white);
+}
+
+.my-order-content p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-order-content p span:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.my-order-content p span:nth-child(2) {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+.my-order-content p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.shoping-article {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.shoping-article figure img {
+    width: 70px;
+    height: 70px;
+}
+
+.shoping-article p:nth-child(2) {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+}
+
+.shoping-article p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+/* NAVBAR STYLES */
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.navbar-logo {
+    width: 100px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list {
+    display: none;
+}
+
+.navbar-left ul li a, .navbar-right ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.navbar-left ul li a:hover, .navbar-right ul li a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+
+.navbar-email {
+    display: none;
+}
+
+.navbar-email a {
+    color: var(--dark) !important;
+    font-size: var(--sm) !important;
+    margin-right: 12px;
+}
+
+.navbar-shoping-cart {
+    position: relative;
+}
+
+.navbar-shoping-cart div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -6px;
+    right: -4px;
+}
+
+/* PRODUCT STYLE */
+
+.product-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.product-details {
+    width: 360px;
+    height: 75%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-details-close {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: var(--white);
+    width: 14px;
+    height: 14px;
+}
+.product-details-close > img {
+    width: 12px;
+    height: 12px;
+}
+
+.product-details-close > img:hover {
+    cursor: pointer;
+}
+
+.product-image > img:nth-child(2) {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 360px);
+}
+
+.product-info > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+}
+
+.product-info > div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.product-info > div p:nth-child(2) {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.product-info > div p:nth-child(3) {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-top: 8px;
+    margin-bottom: 4px;
 }
