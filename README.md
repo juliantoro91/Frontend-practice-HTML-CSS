@@ -1,2 +1,3 @@
-# first-app
-First web app
+# Frontend practice
+
+Practicing frontend with Platzi course
